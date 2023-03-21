@@ -1,0 +1,12 @@
+{
+	"City": "Split",
+	"Coordinates": {
+		"Latitude": 64,
+		"Longitude": 21
+	},
+	"Census": {
+		"Population": 125000,
+		"Municipality": "Split",
+		"Region": "Splitsko-dalmatinska županija"
+	}
+}

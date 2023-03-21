@@ -1,0 +1,6 @@
+SELECT
+    *
+INTO
+    logoutput
+FROM
+    loginput

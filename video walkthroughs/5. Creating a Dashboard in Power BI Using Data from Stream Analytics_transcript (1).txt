@@ -1,0 +1,89 @@
+Welcome back.
+Welcome back to this task.
+In this task you will create a Power BI dashboard using live
+data from Stream Analytics job you created in the previous
+task. So now we will go to the Power BI tab.
+There should be a third tab if you followed along all
+the demos. The tab that says Data visualization Microsoft Power BI.
+Click on Sign in and you should be, if logging prompts you,
+then enter your username and password.
+Choose your workspace
+if you have multiple and under your chosen workspace,
+you should see dataset called telemetry.
+Click on it.
+This is the dataset created by Azure Stream Analytics job.
+Now we will create a report.
+First visualization we will choose is Gauge.
+So click on it and click on vibe to put it under value, right
+here. Now click on the canvas.
+Select the visualization we just created and now
+chose Clustered Bar Chart, this one, and put vibe under... and put
+Spike and Dip Score under value.
+This one. It automatically goes to values.
+Okay. Now choose Card as visualization type.
+First select the visualization, choose card
+as visualization type, and put Spike and dip
+anomaly under fields, like this.
+Okay. And for the last visualization will be line chart
+expanded like this.
+Okay, put time under access, like this, and the Spike and deep
+score under values.
+Okay. And now, under time filter, open the time filter.
+Choose relative time and choose "is in the last one hour".
+Because we don't have much data
+and this report choose the "is in the last hour". Collapse
+the filters, collapse visualizations, collapse fields, so we
+can see our report. Click on the Save icon to save
+this report.
+Give it a name.
+For example,
+telemetry report. We can Save.
+The report is now here.
+We can click on it and you can pin these visualizations on
+the dashboard, like this, pin visual. We don't have any
+dashboards.
+I don't have it.
+Maybe you have, but I don't.
+So I would create a new one.
+I will call it dashboard telemetry.
+And I will pin all other visuals also,
+pin it to now existing dashboard, pin, okay.
+And for the last one,
+just close this,
+pin visual.
+Click on pin button, close this pop up.
+And go to dashboards.
+Click on your newly created dashboard.
+Organize a bit.
+Put it..
+Put the visuals to the smallest possible size so we can see
+them all.
+Okay, put this line chart here.
+Okay. And drag Is Spike and Dip Anomaly under here.
+Okay, and expand this a little bit.
+So what you can see now is live chart, like dashboard.
+You can see these
+values moving. Okay, and this vibe should also change over
+time like this.
+So this is near real time data from the IoT device in the
+Power BI dashboard.
+So, in this task we created a PowerBI dashboard from
+dataset created and populated from Stream Analytics
+job. Dashboard is live and near little time.
+And in this project, you learned about Stream Analytics
+service in Azure and how to create inputs, outputs and
+queries to transform data. You also learned how to use Visual
+Studio Code to simulate IoT hub device,
+you created the IoT hub and Event hub to receive and send
+messages from simulated wind turbine.
+This is the last task in the project. Don't forget to clean
+up your Azure portal, resource groups you used.
+Let's do that together.
+So close this and close this, go to Home.
+Go to Resource groups, click on your resource group.
+Okay, click on Select all.
+If you don't need this anymore and click on delete,
+only if you don't need this anymore. Now type Yes
+and confirm delete, and click on delete button.
+Okay, that's it for this project.
+Happy learning and see you in the next project.

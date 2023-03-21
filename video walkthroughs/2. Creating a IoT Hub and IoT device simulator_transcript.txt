@@ -1,0 +1,95 @@
+Welcome back and welcome to this task.
+In the next couple of tasks, we will create an IoT Hub and
+Stream Analytics job to analyze data
+from IoT device on wind turbine. IoT data will be simulated
+with Visual Studio Code application that will send IoT
+data to the Stream Analytics job which will route received data.
+Let's start with creating an IoT Hub and IoT hub device.
+Go to the home screen of the portal.
+I will just click on Home and click on Create Resource. 
+Type IoT in the search box and click on IoT Hub and click
+on Create. Choose your Resource group, choose your region.
+Mine... the closest to me is West Europe, and choose the IoT hub
+name which has to be globally unique.
+So I will name mine iothubdeansavovic. And Review
+and create. And click on Create.
+Now we are redirected to deployment progress page.
+You can now pause the video and wait for deployment to finish.
+The deployment is complete.
+Now go to Resource and go to the IoT devices, as we
+will now create IoT hub device identity. Click on New
+and for device ID enter WindTurbineSensorID.
+Okay, make sure authentication type is Symmetric key.
+Auto-generate keys is checked, connect this device to an IoT hub
+is enabled and click on Save. And you have created
+WindTurbineSensorID. Click on the device and copy
+Primary Connections String by clicking on the Copy button.
+Okay, and now open Notepad.
+Okay, maximize it and paste the connection string
+in the Notepad, you will need it later.
+Next, we will create an IoT device simulator using Visual
+Studio Code that is already prepared and ready for your
+analysis.
+Please pause the video and analyze the code when we go
+come to that stage. 
+First, let's minimize
+Notepad.
+Minimize the browser.
+Minimize Windows Explorer and open Visual Studio Code
+by double clicking the icon on the desktop.
+When the Visual Studio Code opens, click on file and open
+folder, click on Desktop and double click 
+Wind Turbine and select Folder.
+This will open our project. Project is very simple.
+It only has Program.cs file.
+Click on it and let's quickly go through it.
+The program has a class simulated device which has
+some properties.
+And the most important method is Send Device to Cloud
+Messages Async
+which randomizes data
+and says the speed of the wind turbine, says
+the temperature vibrations, and so on.
+And what is the most important part is located below, and I
+will show it to you now. It's this, telemetry message
+Properties Add Sensor VSTell.
+This is a log message.
+So sensor id is the key, VSTell is the value and down
+under that is sensor id.
+VSlog, which is a log message.
+I'm sorry.
+The previous was telemetry message.
+So the real data, VSTell. Okay?
+This is the telemetry data and this is the log data.
+Okay, you can now pause the video and analyze the code further.
+What we have to do now is change the connection string
+to the IoT hub device which you pasted in the Notepad
+previously and this is located at the top.
+All right, here on the 44th line.
+Private read only statics string as device connections string,
+and you have here in double quotation marks connection
+string.
+So go to Notepad.
+Select all by pressing CTRL+A.
+Copy
+the string.
+Go back to Visual Studio Code and paste
+over this... and paste.
+Okay, OK, now click on file.
+Save. Okay, it's saved.
+And now go to terminal and type dotnet run. And the same
+simulator should start now.
+Start connecting to the IoT
+hub device and start producing messages in the terminal of
+what has been done.
+Okay, telemetry data has been sent.
+Log data has been sent telemetry sent, and so on. Leave it
+running because we will need in the next task.
+So, uh, in this task, you created IoT hub and
+IoT hub device identity.
+You also analyzed Visual Studio Code that sends log and telemetry
+data to
+IoT hub.
+In the next task, we will create Stream Analytics Job that
+will route telemetry and log messages.
+See you in the next task.

@@ -1,0 +1,12 @@
+{
+	"City": "Reykjavik",
+	"Coordinates": {
+		"Latitude": 64,
+		"Longitude": 21
+	},
+	"Census": {
+		"Population": 125000,
+		"Municipality": "Reykjavík",
+		"Region": "Höfuðborgarsvæðið"
+	}
+}

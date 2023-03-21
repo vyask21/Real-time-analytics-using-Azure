@@ -1,0 +1,26 @@
+WITH AnomalyDetectionStep AS
+ (
+     SELECT
+         EVENTENQUEUEDUTCTIME AS time,
+         CAST(vibration AS float) AS vibe,
+         AnomalyDetection_SpikeAndDip(CAST(vibration AS float), 95, 120, 'spikesanddips')
+             OVER(LIMIT DURATION(second, 120)) AS SpikeAndDipScores
+     FROM telemetryinput
+ )
+ SELECT
+     time,
+     vibe,
+     CAST(GetRecordPropertyValue(SpikeAndDipScores, 'Score') AS float) AS
+     SpikeAndDipScore,
+     CAST(GetRecordPropertyValue(SpikeAndDipScores, 'IsAnomaly') AS bigint) AS
+     IsSpikeAndDipAnomaly
+ INTO telemetryoutput
+ FROM AnomalyDetectionStep
+ 
+SELECT
+    *
+INTO
+    logoutput
+FROM
+    loginput
+	

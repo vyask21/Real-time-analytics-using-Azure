@@ -1,0 +1,86 @@
+Welcome back.
+And welcome back to this task. Before we start, make sure
+the terminal in the Visual Studio Code is still producing
+messages.
+If it is not, then type in dotnet run in terminal and it
+will start producing messages.
+This means that it is sending data to IoT
+hub device.
+Mine is running, so I don't have to do anything.
+Uh, in this task, we will create a route to send log
+messages from IoT hub device to storage account.
+First thing.
+Let's go to the browser.
+Okay. And go to Home,
+if you're not positioned at home page of Azure portal,
+and find the IoT hub device that you created in the previous
+task. Mine is right here under Recent resources,
+iothubdeansavovic.
+Now go to messaging and click on Message routing.
+And you see, we don't have any routes because this is 
+the new
+IoT hub.
+Let's click on Add new route and give route a name.
+You can give it a name loggingroute, and for Endpoint, we
+will use a storage account and we will create a new endpoint
+because we don't have any, and choose storage from the drop-down.
+For Endpoint name
+type in
+logendpoint.
+Okay. And under Azure storage account and Container click
+Pick a container.
+Okay, now the Azure portal is suggesting us storage accounts
+that we have.
+But we want to create a new one, so click on storage
+ccount, your storage account button, and give it a name.
+I will give it a name
+sadsavoviclog
+because log messages will be routed to this account
+and leave all other settings to default
+except for location.
+Choose the closest location to you,  mine is West Europe, and click
+on OK.
+Storage account is being created.
+Deployment is in progress.
+You can see that in the notification window,
+and until deployment is completed, you can pause the video.
+The deployment is completed and
+it's succeeded.
+Now close the notification window and click on newly
+created storage account, mine is sadsavoviclog.
+Yours has a different name because you have a different
+first letter of the first name and last name,
+and we don't have any containers in this storage
+account because it's a new storage account, so
+add new container
+by pressing this button and name the container cntrlog.
+For example, you can use the same name, leave public access
+level to private and click Create.
+Click on the newly created container and click Select.
+We have now picked the container of our storage account,
+and we can see the others here.
+So it's the name of the storage account slash name
+of the container.
+Next, let's click on Create button.
+So we have created the Endpoint and you can pause the video
+until the deployment finishes.
+Deployment has finished and
+we have our Endpoint selected.
+Make sure data source is device telemetry messages, enable
+route is enabled and under routing query
+go to Windows Explorer and go to file 01 root log.
+Open it by double clicking.
+Select all text, copy it, go to browser.
+Delete true, and paste sensor ID equals VSLog
+This will make sure that all the messages that have VSLog
+in sensor id key will be routed through this route. And click
+on Save. And the message route has been created.
+The deployment is in progress, so please pause the video now
+until the route is deployed.
+Our logging route is created and deployed.
+And to summarize this task - in this task we created IoT hub
+route to route messages from IoT hub device to storage
+account.
+In the next task, you will create Azure Stream Analytics job
+to forward
+events to storage account. See you in the next test.
