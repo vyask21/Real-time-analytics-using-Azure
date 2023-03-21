@@ -1,1 +1,1 @@
-# Real-time-analytics-using-Azure
+# Real time analytics using Azure
