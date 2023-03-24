@@ -8,4 +8,4 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = vibrations
-build_property.ProjectDir = c:\Users\vyask\OneDrive - Dallas Baptist University\DBU\Projects\Performing Real Time Analytics with Stream Analytics\windturbine\
+build_property.ProjectDir = c:\Users\vyask\OneDrive\Documents\GitHub\Real-time-analytics-using-Azure\windturbine\
