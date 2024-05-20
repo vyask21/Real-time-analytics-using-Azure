@@ -1,8 +1,7 @@
 # Real time analytics using Azure
 
 ## Pre-requisites
-1.  Create an Azure Free Trial/student subscription beforehand at https://portal.azure.com
-2. .NET Framework for Windows: https://dotnet.microsoft.com/en-us/download/dotnet-framework
+.NET Framework for Windows: https://dotnet.microsoft.com/en-us/download/dotnet-framework
 
 ## 1. Data streams and event processing
 
